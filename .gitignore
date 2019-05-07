@@ -1,3 +1,8 @@
+.idea/
+build/
+dist/
+NumLib.egg-info/
+pi-billion.txt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
