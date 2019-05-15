@@ -1,2 +1,2 @@
 from NumLib import NumLib
-from NumLib.PlotUtil import PlotUtil#if pycharm says error... it works as a module...
+from NumLib import PlotUtil#reverted from NumLib.PlotUtil .... see git version history
