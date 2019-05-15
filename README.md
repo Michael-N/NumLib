@@ -8,8 +8,9 @@ project as needed leaving a comment stating that it originated from another of m
 - Access large quantities of numerical info from a constant
 - Display Data with plotting and graphing libraries
 ## Installation
-- clone the repo then 
-- ```pip install -e NumLib```
+- clone the repo then run the command: 
+- ```python -m pip install -e NumLib```
+- (running it this way ensures if you are using Anaconda Envs you can run this in an activated Env)
 ## File ```NumLib.py``` class ```NumLib```
 - Is a script for loading constants into attributes of the instance of NumLib
 - Constants can be redefined to change the file the code looks for number data in 
