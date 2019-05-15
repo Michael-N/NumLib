@@ -14,7 +14,7 @@ ZETAFUNC_ZEROS_NAME="ZetaZerosIM.txt"
 PI_FILE_NAME="pi-billion.txt"
 #Euler's constant
 #Collatz Path Lengths
-
+import PlotUtil# Hack but it works....
 #NumLib: loads constants from files...
 class NumLib():
     def __init__(self):
