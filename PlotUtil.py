@@ -16,7 +16,7 @@ from datashader.bokeh_ext import InteractiveImage
 import numpy as np, pandas as pd, datashader as ds
 import matplotlib.pyplot as plt
 import random
-
+from mpl_toolkits.mplot3d import Axes3D
 
 #setup
 palette["viridis"]=viridis
@@ -62,7 +62,7 @@ class PlotUtil():
         plt.title(title)
         plt.xlabel(x_name)
         plt.ylabel(y_name)
-        plt.scatter(data['data'][0], data['data'][1], c=[(random.random(),random.random(),random.random())], s=np.pi * 3, alpha=0.5, label=data['name'])
+        plt.scatter(data['data'][0], data['data'][1], c=[(random.random(),random.random(),random.random())], s=np.pi * 3*random.random(), alpha=0.5, label=data['name'])
         plt.legend(loc='upper left');
         plt.show()
     # Plotting Code: Passed a series list [series1,series2] where series {name:"",x:[],y:[]}
@@ -81,4 +81,14 @@ class PlotUtil():
                         s=np.pi * 3, alpha=0.5, label=group['name'])
             idx += 1
         plt.legend(loc='upper left')
+        plt.show()
+
+    @staticmethod
+    def plot3D(x,y,z):
+        fig = plt.figure()
+        ax = fig.add_subplot(111, projection='3d')
+        ax.scatter(x, y, z, marker='o')
+        ax.set_xlabel('X Label')
+        ax.set_ylabel('Y Label')
+        ax.set_zlabel('Z Label')
         plt.show()
